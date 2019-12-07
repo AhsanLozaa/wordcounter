@@ -1,0 +1,13 @@
+{% load bootstrap4 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+
+<h1 class="popover-header; btn-primary" style="text-align: center; font-size:xx-large; background-color: cadetblue">WORD COUNT</h1>
+<div class="form-control-plaintext">
+    <a href="{% url 'about' %}" class="popover-header" style="font-size: small;">ABOUT</a>
+    <form action="{% url 'count' %}" style="margin-top: 20px;">
+        <textarea cols="40" rows="10" name="fulltext"></textarea>
+        <br/><br/>
+        <input type="submit" value="Count!" class="btn btn-primary"/>
+    </form>
+</div>
